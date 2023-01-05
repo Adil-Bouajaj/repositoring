@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% macro input (name, pseudo, email, password, confirm password) %}
+<div class="mb-3">
+    <label for="" class="form-label">{{ titre }}</label>
+    <input name="{{ name }}", pseudo="{{ pseudo }}", password="{{ password }}", confirm password="{{ confirm password }}", email="{{ email }}"/>
+</div>
+<div class=""></div>
+{% endmacro %}
