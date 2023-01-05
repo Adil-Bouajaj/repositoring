@@ -1,0 +1,11 @@
+{% extends "layout.html.twig" %}
+{% import "macros/form.html.twig" as form %}
+
+{% block content %}
+    <h1>Page Contact</h1>
+    <form action="?page=dispay" method="POST">
+        {{ form.input('message', 'pseudo' ) }}
+        {{ form.textarea('message', 'pseudo') }}
+        <button>Valider</button>
+    </form>
+{% endblock %}
